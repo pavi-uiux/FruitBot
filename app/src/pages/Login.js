@@ -1,19 +1,19 @@
-import React, { useState } from "react";
-import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react"; // Import useState
+import axios from "axios"; // Import axios
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./Login.css";
 import mangoImage from "../assets/mango.jpg"; // Import the mango image
 
 function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const navigate = useNavigate();
+  const [email, setEmail] = useState(""); // Define email state
+  const [password, setPassword] = useState(""); // Define password state
+  const navigate = useNavigate(); // Define navigate
 
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3005/api/auth/login",
+        "http://localhost:5000/api/auth/login",
         {
           email,
           password,

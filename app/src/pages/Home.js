@@ -9,7 +9,7 @@ function Home() {
       <div className="hero-section">
         <div className="hero-content">
           <h1 className="hero-title">
-            FruitBot: Smart Fruit Ripeness Detector 🍌🥭
+            FruitBot: Smart Fruit Ripeness Detector🥭
           </h1>
           <p className="hero-description">
             Harness the power of drones and AI to predict fruit ripeness with unparalleled accuracy. 
